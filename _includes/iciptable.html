@@ -1,29 +1,29 @@
 <style type="text/css">
-  .ICIPtable .title {
+  .iciptable .title {
     width: 67%;
   }
 
-  .ICIPtable .author {
+  .iciptable .author {
     width: 33%;
   }
 </style>
 {% for status in site.data.statuses %}
-  {% assign ICIPs = include.ICIPs|where:"status",status|sort:"ICIP" %}
-  {% assign count = ICIPs|size %}
+  {% assign icips = include.icips|where:"status",status|sort:"icip" %}
+  {% assign count = icips|size %}
   {% if count > 0 %}
     <h2 id="{{status|slugify}}">{{status}}</h2>
-    <table class="ICIPtable">
+    <table class="iciptable">
       <thead>
         {% if status == "Last Call" %}
           <tr>
-          <th class="ICIPnum">Number</th><th class="date">Review ends</th><th class="title">Title</th><th class="author">Author</th></tr>
+          <th class="icipnum">Number</th><th class="date">Review ends</th><th class="title">Title</th><th class="author">Author</th></tr>
         {% else %}
-          <tr><th class="ICIPnum">Number</th><th class="title">Title</th><th class="author">Author</th></tr>
+          <tr><th class="icipnum">Number</th><th class="title">Title</th><th class="author">Author</th></tr>
         {% endif %}
       </thead>
-      {% for page in ICIPs %}
+      {% for page in icips %}
         <tr>
-          <td class="ICIPnum"><a href="{{page.url|relative_url}}">{{page.ICIP|xml_escape}}</a></td>
+          <td class="icipnum"><a href="{{page.url|relative_url}}">{{page.icip|xml_escape}}</a></td>
           {% if status == "Last Call" and page.last-call-deadline != undefined %}
             <td class="date">{{ page.last-call-deadline | xml_escape }}</td>
           {% endif %}
