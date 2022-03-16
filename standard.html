@@ -1,0 +1,7 @@
+---
+layout: page
+title: Standard
+---
+
+{% assign ICIPs=site.pages|where:"type","Standard" %}
+{% include ICIPtable.html ICIPs=ICIPs %}

@@ -1,0 +1,7 @@
+---
+layout: page
+title: Meta
+---
+
+{% assign ICIPs=site.pages|where:"type","Meta" %}
+{% include ICIPtable.html ICIPs=ICIPs %}

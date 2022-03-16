@@ -1,0 +1,4 @@
+{% assign ICIPs=include.ICIPs|split:"," %}
+{% for ICIPnum in ICIPs %}
+  <a href="{{ICIPnum|strip|prepend:"ICIP-" }}">{{ICIPnum|strip}}</a>{% if forloop.last == false %}, {% endif %}
+{% endfor %}

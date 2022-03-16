@@ -1,0 +1,36 @@
+---
+layout: default
+title: Home
+---
+
+<h1 class="page-heading">ICIPs
+</h1>
+<p>Internet Computer Improvement Proposals (ICIPs), including informational, standards, and meta proposals.
+
+<h2>Contributing</h2>
+<p>First review <a href="ICIPS/ICIP-1">ICIP-1</a>. Then clone the repository and add your ICIP. There is a <a href="https://github.com/dfinity/ICIPs/blob/main/ICIP-template.md">template ICIP here</a>. Then submit a Pull Request to <a href="https://github.com/dfinity/ICIPs">ICIPs repository</a>.</p>
+
+<h2>ICIP status</h2>
+<ul>
+  <li><strong>Draft</strong> - The first  of a ICIP which is merged by an ICIP Editor into the repository when discussed and properly formatted.</li>
+  <li><strong>Review</strong> - The Author marks a ICIP as ready for and requesting Peer Review.</li>
+  <li><strong>Last Call</strong> - This is the final review for a ICIP before moving to FINAL. A ICIP editor will assign Last Call status and set a review end date (`last-call-deadline`), typically 14 days later. If this period results in necessary changes it will revert the ICIP to Review.</li>
+  <li><strong>Final</strong> - This ICIP represents the final standard. A Final ICIP exists in a state of finality and should only be updated to correct errata and add non-normative clarifications.</li>
+  <li><strong>Stagnant</strong> - Any ICIP in Draft or Review if inactive for a period of 6 months or greater is moved to Stagnant. A ICIP may be resurrected from this state by Authors or ICIP Editors through moving it back to Draft.</li>
+  <li><strong>Withdrawn</strong> - The ICIP Author(s) have withdrawn the proposed ICIP. This state has finality and can no longer be resurrected using this ICIP number. If the idea is pursued at later date it is considered a new proposal.</li>
+  <li><strong>Living</strong> - A special status for ICIPs that are designed to be continually updated and not reach a state of finality. This includes most notably ICIP-1.</li>
+</ul>
+
+<h2>ICIP Types</h2>
+
+<p>ICIPs are separated into a number of types, and each has its own list of ICIPs.</p>
+
+<h3><a href="{{"informational"|relative_url}}">Informational</a> ({{site.pages|where:"type","Informational"|size}})</h3>
+<p>Describes a Internet Computer issue, or provides general guidelines or information to the Internet Computer community, but does not propose a new feature. Informational ICIPs do not necessarily represent community consensus or a recommendation, so users and implementers are free to ignore Informational ICIPs.</p>
+
+<h3><a href="{{"standard"|relative_url}}">Standard</a>({{site.pages|where:"type","Standard"|size}})</h3>
+<p>Describes any change that affects the Internet Computer processes or implementations.
+
+<h3><a href="{{"meta"|relative_url}}">Meta</a> ({{site.pages|where:"type","Meta"|size}})</h3>
+<p>Describes a issues and processes outside of but related to Internet Computer or proposes a change to such a process.
+
